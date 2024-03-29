@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.21.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jessesun/projects/Storage-DataStructure
+CMAKE_SOURCE_DIR = /Users/jessesun/projects/Storage-DataStructure-Algorithm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jessesun/projects/Storage-DataStructure/build
+CMAKE_BINARY_DIR = /Users/jessesun/projects/Storage-DataStructure-Algorithm/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jessesun/projects/Storage-DataStructure/build/CMakeFiles /Users/jessesun/projects/Storage-DataStructure/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jessesun/projects/Storage-DataStructure-Algorithm/build/CMakeFiles /Users/jessesun/projects/Storage-DataStructure-Algorithm/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jessesun/projects/Storage-DataStructure/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jessesun/projects/Storage-DataStructure-Algorithm/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,54 @@ storage: cmake_check_build_system
 storage/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/storage.dir/build.make CMakeFiles/storage.dir/build
 .PHONY : storage/fast
+
+btree/btree.o: btree/btree.cpp.o
+.PHONY : btree/btree.o
+
+# target to build an object file
+btree/btree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/storage.dir/build.make CMakeFiles/storage.dir/btree/btree.cpp.o
+.PHONY : btree/btree.cpp.o
+
+btree/btree.i: btree/btree.cpp.i
+.PHONY : btree/btree.i
+
+# target to preprocess a source file
+btree/btree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/storage.dir/build.make CMakeFiles/storage.dir/btree/btree.cpp.i
+.PHONY : btree/btree.cpp.i
+
+btree/btree.s: btree/btree.cpp.s
+.PHONY : btree/btree.s
+
+# target to generate assembly for a file
+btree/btree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/storage.dir/build.make CMakeFiles/storage.dir/btree/btree.cpp.s
+.PHONY : btree/btree.cpp.s
+
+btree/btree_node.o: btree/btree_node.cpp.o
+.PHONY : btree/btree_node.o
+
+# target to build an object file
+btree/btree_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/storage.dir/build.make CMakeFiles/storage.dir/btree/btree_node.cpp.o
+.PHONY : btree/btree_node.cpp.o
+
+btree/btree_node.i: btree/btree_node.cpp.i
+.PHONY : btree/btree_node.i
+
+# target to preprocess a source file
+btree/btree_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/storage.dir/build.make CMakeFiles/storage.dir/btree/btree_node.cpp.i
+.PHONY : btree/btree_node.cpp.i
+
+btree/btree_node.s: btree/btree_node.cpp.s
+.PHONY : btree/btree_node.s
+
+# target to generate assembly for a file
+btree/btree_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/storage.dir/build.make CMakeFiles/storage.dir/btree/btree_node.cpp.s
+.PHONY : btree/btree_node.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -186,6 +234,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... storage"
+	@echo "... btree/btree.o"
+	@echo "... btree/btree.i"
+	@echo "... btree/btree.s"
+	@echo "... btree/btree_node.o"
+	@echo "... btree/btree_node.i"
+	@echo "... btree/btree_node.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

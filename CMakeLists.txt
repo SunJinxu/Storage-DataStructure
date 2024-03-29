@@ -7,6 +7,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED true)
 
 add_executable(storage
                 ${CMAKE_SOURCE_DIR}/main.cpp
-                ${CMAKE_SOURCE_DIR}/skiplist/skiplist.cpp)
+                ${CMAKE_SOURCE_DIR}/skiplist/skiplist.cpp
+                ${CMAKE_SOURCE_DIR}/btree/btree.cpp
+                ${CMAKE_SOURCE_DIR}/btree/btree_node.cpp)
 
-include_directories(${CMAKE_SOURCE_DIR}/skiplist)
+include_directories(${CMAKE_SOURCE_DIR}/skiplist
+                    ${CMAKE_SOURCE_DIR}/btree)

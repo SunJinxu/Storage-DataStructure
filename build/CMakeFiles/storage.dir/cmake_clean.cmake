@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/storage.dir/btree/btree.cpp.o"
+  "CMakeFiles/storage.dir/btree/btree.cpp.o.d"
+  "CMakeFiles/storage.dir/btree/btree_node.cpp.o"
+  "CMakeFiles/storage.dir/btree/btree_node.cpp.o.d"
   "CMakeFiles/storage.dir/main.cpp.o"
   "CMakeFiles/storage.dir/main.cpp.o.d"
   "CMakeFiles/storage.dir/skiplist/skiplist.cpp.o"
