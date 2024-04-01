@@ -42,7 +42,19 @@
         "typeinfo": "cpp",
         "variant": "cpp",
         "vector": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "list": "cpp",
+        "__hash_table": "cpp",
+        "unordered_map": "cpp",
+        "memory_resource": "cpp",
+        "iterator": "cpp",
+        "__node_handle": "cpp",
+        "__tree": "cpp",
+        "deque": "cpp",
+        "map": "cpp",
+        "optional": "cpp",
+        "queue": "cpp",
+        "set": "cpp"
     },
     "cmake.configureOnOpen": false,
 }
